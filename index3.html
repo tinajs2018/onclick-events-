@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js  Create element demo</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+ 
+<ul id="menu">
+    <li>Home</li>
+
+</ul>
+
+<script>
+    let div=document.createElement('div');
+    div.id='content';
+    div.className='note';
+    div.innerHTML='<p>I got a strong feeling it will be oaky soon It seem like alot but i know is has to be okay  </p>';
+   
+    document.body.appendChild(div);
+    let pens=document.createElement('pens');
+    pens.id='school';
+    pens.className="dom";
+    // creating atext node 
+    let text=document.createTextNode('It takes time for everything to just click I remember their was time i used to winder what can javascript actually do.But as one of the guys ever told me onece you have mastered javascript is only your imaganation that can actually limit you');
+    pens.appendChild(text);
+    //add to the whole page
+    document.body.appendChild(pens);
+    let h2=document.createElement('h2');
+    h2.textContent='The summary of super good work';
+    div.appendChild(h2);
+    document.body.appendChild(div)
+    let p=document.createElement('p');
+    p.textContent="It startred as a urge to learn something good to become so skilful that people cannot say no to such askill .But up to date is such one of the amazing deciosn i ever made in by fucking good life";
+    div.appendChild(p);
+    document.body .appendChild(p);
+    let li=document.createElement('li')
+    li.textContent='Products';
+    menu.appendChild(li);
+    li=document.createElement('li')
+   li.textContent="About us";
+   const menu=document.querySelector('#menu');
+   menu.appendChild(li);
+
+
+</script>
+
+</body>
+
+   
+</html>

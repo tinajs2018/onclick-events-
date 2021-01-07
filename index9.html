@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+   <label for="test" >languages</label>  <br> <br>
+   <input type="radio" id="select" name="status">javascript
+   <input type="radio" id="select" name="status">python
+   <input type="radio" id="select" name="status">React
+   <input type="radio" id="select" name="status">node
+<button id="sub">submit</button>
+<label for="status">Web technlogies</label> <br> <br>
+<input type="checkbox"  id="Html" name="status">HTML
+<input type="checkbox" id="css"name="status" >javascript
+<input type="checkbox" id="react"name="status" >React
+<p id="result"></p>
+<script>
+    let result=document.querySelector("#result");
+    document.body.addEventListener('change' ,function(e){
+        let target=e.target;
+        let message;
+        switch(target.id){
+            case'Html':
+            message='th html checkbox as cahnged';
+            case'css':
+            message='the css checkbox has changed';
+            case' react':
+            message='the react checkbox has changed'
+        }
+        result.textContent=message;
+    })
+</script>
+
+</body>
+</html>

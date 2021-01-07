@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jascript events change</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #lang{
+            font-size: 12px;
+            color: red;
+        }
+        #result{
+font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="lang">
+<option value=""> select the language</option>
+<option value="javascript"> javascript</option>
+<option value="typescript"> Typescript</option>
+<option value="php"> Php</option>
+<option value="python"> python</option>
+<option value="java"> java</option>
+<option value="node"> node</option>
+    </select>
+    <p id="result"></p>
+    <script>
+        let  select=document.querySelector('#lang');
+        let result=document.querySelector("#result");
+        select.addEventListener('change',function(e){
+            result.textContent=this.value;
+        })
+    </script>
+</body>
+</html>

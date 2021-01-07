@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append chil using js</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <ul id="menu">
+
+  </ul>
+  <div class="section1">
+  <h1>The mountains found in east africa</h1>
+
+<ul id="first-list">
+    <li>Everest</li>
+    <li>Fuji</li>
+    <li>KIlimanjaro</li>
+</ul>
+<ul id="second-list">
+    <li>Karorram range</li>
+    <li>Denali</li>
+    <li>Mount Blanc</li>
+</ul>
+</div>
+<div id="note">
+    <h4>javascript textcontent demo</h4>
+    <span style="display: none;">Hide the text</span>
+</div>
+  <script>
+      function createMenuItem(name){
+          let li=document.createElement("li");
+          li.textContent=name;
+          return li;
+      }
+      //getting the menu id
+      const menu=document.querySelector('#menu');
+    //adding to the menu
+    menu.appendChild(createMenuItem('Home'));
+    menu.appendChild(createMenuItem('About us'));
+    menu.appendChild(createMenuItem('Services'));
+    menu.appendChild(createMenuItem('Products'));
+    menu.appendChild(createMenuItem('Contant us'));
+
+    const firstlist=document.querySelector('#first-list');
+    const Evelest=firstlist.firstElementChild;
+    const secondlist=document.querySelector('#second-list');
+    secondlist.appendChild(Evelest)
+   let note=document.getElementById('note')
+   console.log(note.textContent);
+
+  </script>
+
+
+    
+</body>
+</html>

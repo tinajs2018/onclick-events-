@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js document fragements</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+<ul id="language"></ul>
+<script>
+let languages=['Js', 'Typescript','Elm','Drts','scala'];
+let lange1=document.querySelector('#language');
+let fragement=new DocumentFragment();
+languages.forEach((language)=>{
+    let  li=document.createElement('li');
+    li.innerHTML=language;
+    fragement.appendChild(li);
+})
+lange1.appendChild(fragement);
+
+</script>
+
+
+</body>
+</html>

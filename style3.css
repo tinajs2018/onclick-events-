@@ -1,0 +1,16 @@
+#content{
+    color: blue;
+    text-align: center;
+}
+.note{
+font-weight: 600;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dom{
+    border-top: 2px solid red;
+  font-size: 20px;
+}
+#menu{
+    font-size: 30px;
+    color: red;
+}

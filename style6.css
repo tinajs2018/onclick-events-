@@ -1,0 +1,13 @@
+.container i{
+margin-left: -30px;
+cursor: pointer;
+}
+body{
+    background-color: slategray;
+}
+#password{
+    font-size: 12px;
+}
+#togglePassword{
+    color: springgreen;
+}

@@ -1,0 +1,17 @@
+body{
+   background-color: seashell;
+}
+#result{
+    font-size: 20px;
+}
+.input{
+    font-weight: 800;
+}
+#result1{
+    color: red;
+}
+#select{
+    text-transform: uppercase;
+    font-size: 20px
+    ;
+}

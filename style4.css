@@ -1,0 +1,27 @@
+#menu{
+font-size: 20px;
+}
+ul{
+float: right;
+font-weight: bolder;
+text-transform: uppercase;
+}
+li{
+ float: left;
+ padding: 12px;
+ list-style: none;
+}
+li:hover{
+    color: red;
+}
+.section1{
+   background-color: rosybrown;
+}
+#first-list{
+    font-weight: 800;
+    color: skyblue;
+}
+#second-list{
+    color: slateblue;
+}
+ 

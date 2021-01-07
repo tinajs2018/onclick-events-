@@ -1,0 +1,9 @@
+body{
+    background-color: blanchedalmond;
+}
+#logo{
+    margin: 40px;
+}
+.dom{
+    border-top: 2px solid red;
+}

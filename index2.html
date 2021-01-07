@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading events</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <img id="logo" style="width: 250px;"> 
+
+ <script>
+    //  let logo=document.querySelector('#logo');
+    //  logo.addEventListener('load',(event)=>{
+    //      console.log('the image is fully loaded')
+    //  });
+    //  logo.src="img9.jpg";
+   window.addEventListener('load' ,() => {
+let logo=document.createElement('img');
+logo.addEventListener('load',(event)=>{
+    console.log("the logo has been set by tina")
+});
+document.body.appendChild(logo);
+logo .src="img6.jpg";
+   });
+    
+ </script>  
+
+</body>
+</html>

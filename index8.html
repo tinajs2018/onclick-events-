@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+ <input type="text" class="input"> 
+ <button id="result">Submit</button> 
+ <div>
+     <label for="status">status</div>
+        <input type="radio" id="pending" name="stautus">Pending
+        <input type="radio" id="resoved name="stautus">Resolved
+        <input type="radio" id="Rejected" name="stautus">Rejected
+        <p id="result1"></p>
+ </div>
+
+ <input type="radio">comment
+ <input type="radio"> dess
+ <script>
+   let input=document.querySelector('.input') ;
+   let result=document.querySelector('#result') ;
+   input.addEventListener('change',function(){
+       result.textContent=this.value
+   });
+   let result1=document.querySelector('#result1');
+   document.body.addEventListener('change', function(e){
+       let target=e.target
+       let message;
+       switch(target.id){
+           case'pending':
+           message='The pending radio button changed';
+           break;
+           case'resolved':
+           message='the resoved radio button has been solved';
+           case'rejected':
+           message='the rejeceted radio button has been solved';
+       }
+       result1.textContent=message;
+   });
+ </script>
+
+    
+</body>
+</html>

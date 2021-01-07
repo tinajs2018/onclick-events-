@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle the visiblity of the password </title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class=".">
+ <h1>Toggle password visibity using javascript</h1> 
+ <input type="password" name="password" id="password" placeholder="Please enter your passowrd">
+ <i class="fa fa-eye" aria-hidden="true" id="togglePassword"></i>
+</div>
+<script>
+let password1=document.querySelector('#password');
+let toggleP=document.querySelector('#togglePassword');
+toggleP.addEventListener('click',function(e){
+    const type=password1.getAttribute('type')==='password' ? 'text':password1;
+    password1.setAttribute('type',type);
+    this .classList.toggleP('fa-eye-slash')
+})
+
+
+
+</script>
+
+
+</body>
+</html>
